@@ -1,0 +1,60 @@
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+#
+# 🍎 Demo — Workstations
+#
+# The instructor's demo fleet. Carries the full sample wiring
+# (profiles, declarations, scripts, reports, policies, software)
+# so every lesson has something real to show. Students build the
+# same things by hand in their own fleets.
+#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+name: "🍎 Demo — Workstations"
+
+controls:
+  # LESSON 7 — profiles & declarations land on this fleet's hosts.
+  apple_settings:
+    configuration_profiles:
+      - paths: ../platforms/macos/declaration-profiles/*.json
+      - paths: ../platforms/macos/configuration-profiles/*.mobileconfig
+
+  # LESSON 8 — OS updates (demo values; adjust live).
+  macos_updates:
+    deadline: "2026-10-01"
+    minimum_version: "26.0"
+
+  # NOTE: disk encryption stays OFF for the class — FileVault is
+  # incompatible with the cloud-hosted lab Macs. Show the toggle only.
+  # enable_disk_encryption: true
+
+  scripts:
+    - paths: ../platforms/macos/scripts/*.sh
+
+reports:
+  - paths: ../platforms/all/reports/*.yml
+  - paths: ../platforms/macos/reports/*.yml
+
+policies:
+  - paths: ../platforms/macos/policies/*.yml
+
+software:
+  fleet_maintained_apps:
+    # LESSON 6 demo — swiftDialog with the class post-install script.
+    # (Verify slug with: Software → Add software → Fleet-maintained.)
+    - slug: swiftdialog/darwin
+      self_service: true
+      categories:
+        - Productivity
+      post_install_script:
+        path: ../platforms/macos/scripts/hello-apple-admin.sh
+
+  app_store_apps:
+    # LESSON 6 demo — Mactracker (VPP). Requires the VPP token to be
+    # connected and licenses available. Verify the Mac App Store ID in
+    # Apple Business before class.
+    # - app_store_id: "430255202"
+    #   self_service: true
+    #   labels_include_any:
+    #     - "Test Macs"
+
+  packages:
+    # Custom-package reference lives in ../platforms/macos/software/

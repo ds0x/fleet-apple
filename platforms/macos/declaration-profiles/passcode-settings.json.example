@@ -1,0 +1,9 @@
+{
+  "_comment": "Reference only (rename to .json to activate). A passcode declaration nags on lab VMs, so it ships disabled. Shows the DDM shape for a real-world setting.",
+  "Type": "com.apple.configuration.passcode.settings",
+  "Identifier": "com.fleetdm.class.ddm.passcode",
+  "Payload": {
+    "RequirePasscode": true,
+    "MinimumLength": 6
+  }
+}

@@ -1,0 +1,11 @@
+# 📱 Demo — iOS/iPadOS
+# Kept minimal: used to show company-owned vs BYOD separation and the
+# iOS/iPadOS enrollment URL in Lesson 2. Add mobile profiles under
+# platforms/ios or platforms/ipados if you want live examples.
+name: "📱 Demo — iOS/iPadOS"
+
+controls:
+  apple_settings:
+    configuration_profiles:
+      - paths: ../platforms/ios/configuration-profiles/*.mobileconfig
+      - paths: ../platforms/ios/declaration-profiles/*.json

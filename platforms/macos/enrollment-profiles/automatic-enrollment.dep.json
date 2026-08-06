@@ -1,0 +1,7 @@
+{
+  "_comment": "ADE Setup Assistant profile (optional — only used for the single Apple Business demo device). Customize skip keys as desired.",
+  "profile_name": "FCAA class — automatic enrollment",
+  "await_device_configured": false,
+  "is_mdm_removable": true,
+  "skip_setup_items": ["Accessibility", "Appearance", "AppleID", "AppStore", "Biometric", "Diagnostics", "ICloudDiagnostics", "ICloudStorage", "Location", "Payment", "Privacy", "Restore", "ScreenTime", "Siri", "TermsOfAddress", "TOS", "UnlockWithWatch"]
+}

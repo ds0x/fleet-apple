@@ -1,0 +1,6 @@
+# Used in LESSON 6: students scope the Mactracker VPP app to this label.
+# Add lab-host serials/UUIDs in the UI, or list them under `hosts:` here.
+- name: "Test Macs"
+  description: "Lab Macs used for the FCAA class (scope target for Lesson 6)"
+  label_membership_type: manual
+  hosts:

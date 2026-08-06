@@ -1,0 +1,5 @@
+- name: "Apple Silicon macOS hosts"
+  platform: darwin
+  description: "Hosts on the arm64 (Apple Silicon) architecture"
+  query: "SELECT 1 FROM system_info WHERE cpu_type LIKE 'arm64%' OR cpu_type LIKE 'aarch64%'"
+  label_membership_type: dynamic

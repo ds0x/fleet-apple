@@ -1,0 +1,47 @@
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+#
+# default.yml — Fleet-certified Apple Administrator (class)
+#
+# Global manifest: org-wide settings plus labels shared by
+# all fleets. Structure generated with `fleetctl new` and
+# trimmed for the FCAA classroom instance.
+#
+# Docs: https://fleetdm.com/docs/configuration/yaml-files
+#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+org_settings:
+  org_info:
+    org_name: "Fleet ClickOps Class"
+    contact_url: https://fleetdm.com/support
+
+  server_settings:
+    server_url: $FLEET_URL
+
+  secrets:
+    - secret: $FLEET_GLOBAL_ENROLL_SECRET
+
+  ###########################################################
+  # Instructor (ds) connects these by hand before class:
+  # APNs (Settings → Integrations → MDM), Apple Business,
+  # and the VPP token (assign to EVERY student fleet:
+  # VPP token → Actions → Edit fleets).
+  #
+  # Uncomment + fill only if you want them pinned in git:
+  ###########################################################
+  # mdm:
+  #   apple_business:
+  #     - organization_name: "Fleet Device Management Inc."
+  #       macos_fleet: "🍎 Demo — Workstations"
+  #   volume_purchasing_program:
+  #     - location: "Fleet Device Management Inc."
+  #       fleets:
+  #         - "🍎 Demo — Workstations"
+  #         # student fleets are assigned in the UI (30x)
+
+###########################################################
+# Global labels — shared by all fleets.
+# Lesson 4 (labels) and Lesson 6 (software scoping) use these.
+###########################################################
+labels:
+  - paths: ./labels/*.yml

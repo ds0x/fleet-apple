@@ -1,0 +1,11 @@
+# Reference for the LESSON 6 custom-package beat (not deployed by default).
+# Point a fleet's software.packages at this file to activate:
+#
+#   software:
+#     packages:
+#       - path: ../platforms/macos/software/example-custom-package.package.yml
+#         self_service: true
+#
+# url: https://zoom.us/client/latest/ZoomInstallerIT.pkg
+# post_install_script:
+#   path: ../scripts/hello-apple-admin.sh

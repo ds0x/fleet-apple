@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>FullScreen</key>
+			<false/>
+			<key>Label</key>
+			<string>Fleet</string>
+			<key>PayloadDescription</key>
+			<string>Adds a Fleet web clip</string>
+			<key>PayloadDisplayName</key>
+			<string>Web Clip: Fleet</string>
+			<key>PayloadIdentifier</key>
+			<string>com.fleetdm.class.webclip.fleet</string>
+			<key>PayloadType</key>
+			<string>com.apple.webClip.managed</string>
+			<key>PayloadUUID</key>
+			<string>7A1C2E44-0001-4FCA-9A31-C1A55C000001</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>Precomposed</key>
+			<true/>
+			<key>URL</key>
+			<string>https://fleetdm.com</string>
+			<key>IsRemovable</key>
+			<true/>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>LESSON 7 instructor demo: adds a Fleet web clip to the Mac.</string>
+	<key>PayloadDisplayName</key>
+	<string>FCAA — Fleet Web Clip</string>
+	<key>PayloadIdentifier</key>
+	<string>com.fleetdm.class.webclip</string>
+	<key>PayloadOrganization</key>
+	<string>Fleet ClickOps Class</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>7A1C2E44-0000-4FCA-9A31-C1A55C000000</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>

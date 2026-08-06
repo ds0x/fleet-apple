@@ -1,0 +1,7 @@
+- name: "swiftDialog is installed (macOS)"
+  description: "Checks that the swiftDialog binary is present. Demonstrates EXISTS logic plus the install-software automation."
+  resolution: "Fleet installs swiftDialog automatically when this policy fails."
+  query: "SELECT 1 FROM file WHERE path = '/usr/local/bin/dialog' AND type = 'regular';"
+  platform: darwin
+  install_software:
+    fleet_maintained_app_slug: swiftdialog/darwin

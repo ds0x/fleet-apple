@@ -1,0 +1,7 @@
+- name: "Gatekeeper enabled (macOS)"
+  description: "Classic EXISTS policy: passes when Gatekeeper assessments are on. Failing hosts get a swiftDialog heads-up via run_script."
+  resolution: "Fleet notifies the end user with swiftDialog; re-enable Gatekeeper in System Settings → Privacy & Security."
+  query: "SELECT 1 FROM gatekeeper WHERE assessments_enabled = 1;"
+  platform: darwin
+  run_script:
+    path: ../scripts/policy-attention-dialog.sh

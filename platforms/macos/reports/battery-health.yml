@@ -1,0 +1,6 @@
+- name: "Battery health (macOS)"
+  description: "Cycle count and condition per Mac — the 'kinda cool' Lesson 3 demo query. (VMs return no rows; run against a physical Mac for effect.)"
+  query: "SELECT cycle_count, health, condition, maximum_capacity FROM battery;"
+  platform: darwin
+  interval: 3600
+  observer_can_run: true

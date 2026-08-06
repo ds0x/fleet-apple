@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>autohide</key>
+			<true/>
+			<key>orientation</key>
+			<string>left</string>
+			<key>tilesize</key>
+			<integer>48</integer>
+			<key>PayloadDescription</key>
+			<string>Instantly-visible Dock changes for demoing profile delivery</string>
+			<key>PayloadDisplayName</key>
+			<string>Dock Settings</string>
+			<key>PayloadIdentifier</key>
+			<string>com.fleetdm.class.dock.settings</string>
+			<key>PayloadType</key>
+			<string>com.apple.dock</string>
+			<key>PayloadUUID</key>
+			<string>7A1C2E44-0021-4FCA-9A31-C1A55C000021</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>Spare sample: moves the Dock left + autohide. Obvious on delivery, gone on removal.</string>
+	<key>PayloadDisplayName</key>
+	<string>FCAA — Dock Settings</string>
+	<key>PayloadIdentifier</key>
+	<string>com.fleetdm.class.dock</string>
+	<key>PayloadOrganization</key>
+	<string>Fleet ClickOps Class</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>7A1C2E44-0020-4FCA-9A31-C1A55C000020</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>

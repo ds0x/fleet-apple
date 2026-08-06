@@ -1,0 +1,11 @@
+# student-22 — FCAA class sandbox fleet.
+#
+# Intentionally minimal: students build labels, reports, policies,
+# software, and controls BY HAND in the UI during class. Because this
+# file declares an empty baseline, the post-class GitOps apply resets
+# the fleet by removing everything students created.
+name: "student-22"
+
+controls:
+
+software:

@@ -1,0 +1,6 @@
+- name: "Hardware identity (macOS)"
+  description: "Model, chip, serial — instantly different on every student's host, good for the 'unique to YOUR Mac' beat."
+  query: "SELECT hardware_model, cpu_brand, hardware_serial FROM system_info;"
+  platform: darwin
+  interval: 3600
+  observer_can_run: true

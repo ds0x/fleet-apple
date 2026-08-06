@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>LoginwindowText</key>
+			<string>Managed by Fleet — FCAA class 🎓</string>
+			<key>PayloadDescription</key>
+			<string>Sets a message on the login window / lock screen</string>
+			<key>PayloadDisplayName</key>
+			<string>Login Window Message</string>
+			<key>PayloadIdentifier</key>
+			<string>com.fleetdm.class.loginwindow.message</string>
+			<key>PayloadType</key>
+			<string>com.apple.loginwindow</string>
+			<key>PayloadUUID</key>
+			<string>7A1C2E44-0011-4FCA-9A31-C1A55C000011</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>LESSON 7 student sample: a visible, harmless, reversible setting.</string>
+	<key>PayloadDisplayName</key>
+	<string>FCAA — Login Window Message</string>
+	<key>PayloadIdentifier</key>
+	<string>com.fleetdm.class.loginwindow</string>
+	<key>PayloadOrganization</key>
+	<string>Fleet ClickOps Class</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>7A1C2E44-0010-4FCA-9A31-C1A55C000010</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>

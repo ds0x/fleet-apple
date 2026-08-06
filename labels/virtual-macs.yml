@@ -1,0 +1,8 @@
+# Fun demo label: catches Apple Virtualization guests (UTM/Tart VMs report
+# hardware_model 'VirtualMac2,1') — handy for showing dynamic labels
+# match the class VMs instantly.
+- name: "Virtual Macs"
+  platform: darwin
+  description: "macOS hosts running as virtual machines"
+  query: "SELECT 1 FROM system_info WHERE hardware_model LIKE 'VirtualMac%'"
+  label_membership_type: dynamic

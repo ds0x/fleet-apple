@@ -1,0 +1,5 @@
+- name: "Host uptime"
+  description: "Days and hours since last reboot — a fast, satisfying first live report."
+  query: "SELECT days, hours, minutes FROM uptime;"
+  interval: 3600
+  observer_can_run: true
