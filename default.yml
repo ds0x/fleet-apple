@@ -18,9 +18,6 @@ org_settings:
   server_settings:
     server_url: $FLEET_URL
 
-  # secrets:
-  #   - secret: ${FLEET_GLOBAL_ENROLL_SECRET}
-
   ###########################################################
   # Instructor (ds) connects these by hand before class:
   # APNs (Settings → Integrations → MDM), Apple Business,
