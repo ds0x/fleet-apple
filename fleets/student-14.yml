@@ -6,6 +6,10 @@
 # the fleet by removing everything students created.
 name: "student-14"
 
+settings:
+  secrets:
+    - secret: 14-$FLEET_ENROLLMENT_AFFIX
+
 controls:
 
 software:
