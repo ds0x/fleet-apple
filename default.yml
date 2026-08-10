@@ -13,7 +13,7 @@
 org_settings:
   org_info:
     org_name: "Fleet-certified Apple Admin Class"
-    contact_url: https://fleetdm.com/about
+    contact_url: https://fleetdm.com/
 
   server_settings:
     server_url: $FLEET_URL
