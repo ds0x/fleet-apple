@@ -19,7 +19,7 @@ org_settings:
     server_url: $FLEET_URL
 
   secrets:
-    - secret: $FLEET_GLOBAL_ENROLL_SECRET
+    - secret: ${FLEET_GLOBAL_ENROLL_SECRET}
 
   ###########################################################
   # Instructor (ds) connects these by hand before class:
