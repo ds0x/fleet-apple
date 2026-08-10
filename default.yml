@@ -19,22 +19,56 @@ org_settings:
     server_url: $FLEET_URL
 
   ###########################################################
-  # Instructor (ds) connects these by hand before class:
-  # APNs (Settings → Integrations → MDM), Apple Business,
-  # and the VPP token (assign to EVERY student fleet:
-  # VPP token → Actions → Edit fleets).
+  # APNs, Apple Business, and the VPP token itself are connected
+  # by hand (ds) — tokens can't be uploaded via GitOps.
   #
-  # Uncomment + fill only if you want them pinned in git:
+  # The VPP token's FLEET ASSIGNMENT, however, is declared here:
+  # GitOps is authoritative, so an assignment made only in the UI
+  # is reverted on every apply (which then breaks the per-fleet
+  # app_store_apps with "No available VPP Token").
+  #
+  # FLEET_VPP_LOCATION = the token's location/organization-unit
+  # name, exactly as shown in Apple Business / the VPP token list.
+  # Set as a GitHub Actions variable + local export.
   ###########################################################
-  # mdm:
+  mdm:
+    volume_purchasing_program:
+      - location: $FLEET_VPP_LOCATION
+        fleets:
+          - "🍎 Demo — Workstations"
+          - "student-01"
+          - "student-02"
+          - "student-03"
+          - "student-04"
+          - "student-05"
+          - "student-06"
+          - "student-07"
+          - "student-08"
+          - "student-09"
+          - "student-10"
+          - "student-11"
+          - "student-12"
+          - "student-13"
+          - "student-14"
+          - "student-15"
+          - "student-16"
+          - "student-17"
+          - "student-18"
+          - "student-19"
+          - "student-20"
+          - "student-21"
+          - "student-22"
+          - "student-23"
+          - "student-24"
+          - "student-25"
+          - "student-26"
+          - "student-27"
+          - "student-28"
+          - "student-29"
+          - "student-30"
   #   apple_business:
   #     - organization_name: "Fleet Device Management Inc."
   #       macos_fleet: "🍎 Demo — Workstations"
-  #   volume_purchasing_program:
-  #     - location: "Fleet Device Management Inc."
-  #       fleets:
-  #         - "🍎 Demo — Workstations"
-  #         # student fleets are assigned in the UI (30x)
 
 ###########################################################
 # Global labels — shared by all fleets.

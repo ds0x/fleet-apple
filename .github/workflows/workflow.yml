@@ -83,3 +83,10 @@ jobs:
           # Must be ≥29 characters (32 minimum after "NN-").
           ###########################################################
           FLEET_ENROLLMENT_AFFIX: ${{ vars.FLEET_ENROLLMENT_AFFIX }}
+
+          ###########################################################
+          # VPP token location/organization-unit name (exactly as it
+          # appears in the VPP token list) — used by default.yml to
+          # pin the token's fleet assignment in GitOps.
+          ###########################################################
+          FLEET_VPP_LOCATION: ${{ vars.FLEET_VPP_LOCATION }}
