@@ -5,8 +5,6 @@
 	<key>PayloadContent</key>
 	<array>
 		<dict>
-			<key>autohide</key>
-			<true/>
 			<key>orientation</key>
 			<string>left</string>
 			<key>tilesize</key>
@@ -26,7 +24,7 @@
 		</dict>
 	</array>
 	<key>PayloadDescription</key>
-	<string>Spare sample: moves the Dock left + autohide. Obvious on delivery, gone on removal.</string>
+	<string>Spare sample: moves the Dock left and resizes it. Obvious on delivery, gone on removal. (No autohide: revealing a hidden Dock needs an edge-push, which windowed VMs swallow.)</string>
 	<key>PayloadDisplayName</key>
 	<string>FCAA — Dock Settings</string>
 	<key>PayloadIdentifier</key>
