@@ -18,3 +18,6 @@ software:
   # global-only vpp_tokens endpoint; fixed upstream by ~4.90.0). Students
   # configure/deploy it in Lesson 6 rather than adding it themselves.
   # Requires the VPP token to be assigned to this fleet.
+  app_store_apps:
+    - app_store_id: "430255202"
+      platform: darwin
