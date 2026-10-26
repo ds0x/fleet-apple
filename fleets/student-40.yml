@@ -1,0 +1,23 @@
+# student-40 — FCAA class sandbox fleet.
+#
+# Intentionally minimal: students build labels, reports, policies,
+# software, and controls BY HAND in the UI during class. Because this
+# file declares an empty baseline, the post-class GitOps apply resets
+# the fleet by removing everything students created.
+name: "student-40"
+
+settings:
+  secrets:
+    - secret: 40-$FLEET_ENROLLMENT_AFFIX
+
+controls:
+
+software:
+  # Mactracker (VPP) pre-staged: the "Add App Store app" page is broken for
+  # fleet-scoped admins on our current server version (UI requires the
+  # global-only vpp_tokens endpoint; fixed upstream by ~4.90.0). Students
+  # configure/deploy it in Lesson 6 rather than adding it themselves.
+  # Requires the VPP token to be assigned to this fleet.
+  app_store_apps:
+    - app_store_id: "430255202"
+      platform: darwin

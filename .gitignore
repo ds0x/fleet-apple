@@ -1,0 +1,5 @@
+.DS_Store
+*.swp
+
+# Local-only operational scripts (contain the class credential pattern — never push)
+tools-local/

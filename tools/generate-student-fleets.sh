@@ -7,7 +7,7 @@
 # local env for manual runs). It must be ≥29 chars so NN- + affix clears
 # Fleet's 32-character minimum for enroll secrets.
 set -euo pipefail
-COUNT="${1:-30}"
+COUNT="${1:-40}"
 cd "$(dirname "$0")/.."
 for i in $(seq -w 1 "$COUNT"); do
 cat > "fleets/student-$i.yml" <<YML
